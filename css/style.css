@@ -51,6 +51,21 @@ h1 {
     width: 100%;
 }
 
+h2, h3 {
+    color: #e7e7e7;
+}
+
+h2 {
+    font-size: 5rem;
+    margin: 0 20px;
+}
+
+h3 {
+    font-size: 2.3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 .wrapper {
     max-width: 1920px;
     min-width: 320px;
@@ -150,6 +165,75 @@ h1 {
     bottom: 0;
 }
 
+.athlets {
+    position: relative;
+}
+
+.athlets-list li {
+    padding: 6rem 2rem 5rem;
+}
+
+.athlets::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/footballer_192.png");
+    background-repeat: no-repeat;
+    background-position: center 7rem;
+    z-index: 1;
+}
+
+.athlets-list {
+    margin-top: 220px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.athlets p {
+    font-size: 1.5rem;
+}
+
+.athlets-list h3 .number {
+    font-size: 1.4rem;
+    color: #000000;
+    position: relative;
+    top: -.7rem;
+    margin-right: 0.5rem;
+}
+
+.athlets-list .number::after {
+    content: "";
+    width: 100%;
+    display: block;
+    background-color: #5e42b0;
+    height: 3px;
+    position: absolute;
+    bottom: -.3rem;
+}
+
+.athlets-list li:nth-child(1) {
+    background-color: #fafafa;
+}
+
+.athlets-list li:nth-child(2) {
+    background-color: #f5f4f9;
+}
+
+.athlets-list li:nth-child(3) {
+    background-color: #5e42b0;
+}
+
+.athlets-list li:nth-child(3) p {
+    color: #ffffff;
+}
+
+.athlets-list li:nth-child(3) .number::after {
+    background-color: #ffffff;
+}
+
 .footer .app-buttons {
     margin-top: 70px;
 }
@@ -160,24 +244,16 @@ h1 {
     width: 55px;
     height: 55px;
     fill: #ffffff;
-    /*border: 6px #5e42b1 solid;*/
-    /*border-radius: 20px;*/
     background-color: #5e42b1;
     margin-top: 100px;
     margin-bottom: 55px;
 
-
     background-image: -ms-linear-gradient(top, #7656d6 0%, #51379b 100%);
-
     background-image: -o-linear-gradient(top, #7656d6 0%, #51379b 100%);
-
     background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7ac0da), color-stop(1, #a4d4e6));
-
     background-image: -webkit-linear-gradient(top, #7656d6 0%, #51379b 100%);
-
     background-image: linear-gradient(top, #7656d6 0%, #51379b 100%);
-
-    border-radius:18%;
+    border-radius: 18%;
 }
 
 .footer-slogan-1 {
@@ -246,6 +322,45 @@ h1 {
         font-size: 5.5rem;
     }
 
+    h2 {
+        font-size: 6rem;
+        padding-left: 30rem;
+        padding-top: 9rem;
+    }
+
+    .athlets::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url("../images/footballer_497.png");
+        background-repeat: no-repeat;
+        background-position: -150px 90px;
+        z-index: 1;
+    }
+
+    .athlets-list {
+        margin-top: 0;
+    }
+
+    .athlets-list li {
+        padding: 3.5rem 4.5rem 5rem 30rem;
+    }
+
+    .athlets-list li:nth-child(1) {
+        background-color: #ffffff;
+    }
+
+    .athlets-list li:nth-child(2) {
+        background-color: #f4f3f8;
+    }
+
+    .athlets p {
+        line-height: 2rem;
+    }
+
     .footer-slogan-2 {
         font-size: 2.4rem;
     }
@@ -274,6 +389,51 @@ h1 {
     .slogan-2 {
         text-align: right;
         width: 100%;
+    }
+
+    h3 {
+        font-size: 3.6rem;
+    }
+
+    h2 {
+        font-size: 8rem;
+        padding-left: calc(50% + 35px);
+        padding-top: 9rem;
+    }
+
+    .athlets::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 908px;
+        width: 100%;
+        background-image: url("../images/footballer_566.png");
+        background-repeat: no-repeat;
+        background-position-y: 10px;
+        background-position-x: calc(50% - 290px);
+        z-index: 1;
+    }
+
+    .athlets-list {
+        margin-top: 0;
+    }
+
+    .athlets-list li {
+        padding: 3.5rem 18rem 4rem calc(50% + 48px);
+    }
+
+    .athlets p {
+        font-size: 2rem;
+    }
+
+    .athlets-list h3 .number {
+        font-size: 1.8rem;
+        margin-right: 0.7rem;
+        top: -1.2rem;
+    }
+    .athlets p {
+        line-height: 2.8rem;
     }
 
     .footer-slogan-1 {
