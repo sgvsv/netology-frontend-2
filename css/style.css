@@ -7,6 +7,10 @@
 
  Будем пробовать mobile first
 */
+
+
+/* Main styles and mobile */
+
 @font-face {
     font-family: Open-sans;
     font-weight: 400;
@@ -21,37 +25,46 @@
     src: url("../fonts/OpenSans-Bold.woff");
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: Open-sans, Arial, sans-serif;
     padding: 0;
     margin: 0;
-    font-size: 62.5%;
 }
 
 a {
     text-decoration: none;
+    color: #ffffff;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .app-button-line-2 {
     text-transform: uppercase;
     font-weight: bold;
 }
 
 h1 {
-    color: white;
-    font-size: 2.8rem;
+    color: #ffffff;
+    font-size: 9vw;
+    width: 100%;
 }
 
 .wrapper {
     max-width: 1920px;
+    min-width: 320px;
     margin: 0 auto;
 }
 
+/* Header */
 .header {
     background-color: #0a0e34;
     height: 570px;
     width: 100%;
     position: relative;
+    box-sizing: border-box;
+    padding: 30px 20px 20px 20px;
 }
 
 .header::before {
@@ -72,9 +85,113 @@ h1 {
 .header-wrapper {
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 .logo {
     width: 132px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slogan-1 {
+    margin: 130px 0 0;
+    letter-spacing: 1px;
+}
+
+.slogan-2 {
+    align-self: flex-end;
+    letter-spacing: 1px;
+    width: 73.4vw;
+    margin: 20px 0 0px;
+}
+
+.app-button-line-1 {
+    text-transform: uppercase;
+    margin-top: 0.6rem;
+}
+
+.app-button {
+    width: 280px;
+    height: 3.5rem;
+    background-color: #5e42b0;
+    border-radius: 3.8rem;
+    display: flex;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding-left: 83px;
+    font-size: 0.8rem;
+
+}
+
+.app-button-image {
+    height: 2.5rem;
     fill: #ffffff;
+    margin-top: 0.5rem;
+}
+
+.app-buttons {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Adapt 641px - 960px */
+@media (min-width: 641px) {
+    /* Header */
+    .header {
+        background-color: #0a0e34;
+        max-height: 956px;
+        height: 124vw;
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
+        padding: 40px 50px;
+    }
+
+    .header::before {
+        background-image: url("../images/football_1280.jpg");
+    }
+    .logo {
+        width: 200px;
+    }
+    .app-buttons {
+        max-width: 655px;
+        width: 100%;
+        display: flex;
+    }
+
+    .app-button {
+        margin: 15px;
+        width: 308px;
+        height: 7.7rem;
+        font-size: 1.4rem;
+        padding-left: 38px;
+    }
+
+    .app-button-image {
+        height: 5rem;
+        margin: 1.2rem;
+    }
+
+    .app-button-line-1 {
+        margin-top: 1.7rem;
+    }
+}
+
+/* Adapt 960px - inf */
+@media (min-width: 961px) {
+    /* Header */
+    h1 {
+        font-size: 9rem;
+    }
+    .header::before {
+        background-image: url("../images/football_1920.jpg");
+    }
+    .slogan-2 {
+        text-align: right;
+        width: 100%;
+    }
 }
