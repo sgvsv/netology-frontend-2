@@ -165,38 +165,45 @@ h3 {
     bottom: 0;
 }
 
-.athlets {
+.athlets, .players {
     position: relative;
 }
 
-.athlets-list li {
+.list li {
     padding: 6rem 2rem 5rem;
 }
 
-.athlets::before {
+.athlets::before, .players::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url("../images/footballer_192.png");
     background-repeat: no-repeat;
     background-position: center 7rem;
     z-index: 1;
 }
 
-.athlets-list {
+.athlets::before {
+    background-image: url("../images/footballer_192.png");
+}
+
+.players::before {
+    background-image: url("../images/basketballer_302.png");
+}
+
+.list {
     margin-top: 220px;
     list-style-type: none;
     padding: 0;
 }
 
-.athlets p {
+.athlets p, .players p {
     font-size: 1.5rem;
 }
 
-.athlets-list h3 .number {
+.list h3 .number {
     font-size: 1.4rem;
     color: #000000;
     position: relative;
@@ -204,7 +211,7 @@ h3 {
     margin-right: 0.5rem;
 }
 
-.athlets-list .number::after {
+.list .number::after {
     content: "";
     width: 100%;
     display: block;
@@ -214,23 +221,23 @@ h3 {
     bottom: -.3rem;
 }
 
-.athlets-list li:nth-child(1) {
+.list li:nth-child(1) {
     background-color: #fafafa;
 }
 
-.athlets-list li:nth-child(2) {
+.list li:nth-child(2) {
     background-color: #f5f4f9;
 }
 
-.athlets-list li:nth-child(3) {
+.list li:nth-child(3) {
     background-color: #5e42b0;
 }
 
-.athlets-list li:nth-child(3) p {
+.list li:nth-child(3) p {
     color: #ffffff;
 }
 
-.athlets-list li:nth-child(3) .number::after {
+.list li:nth-child(3) .number::after {
     background-color: #ffffff;
 }
 
@@ -328,20 +335,29 @@ h3 {
         padding-top: 9rem;
     }
 
-    .athlets::before {
+    .athlets::before, .players::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        background-image: url("../images/footballer_497.png");
         background-repeat: no-repeat;
-        background-position: -150px 90px;
         z-index: 1;
     }
 
-    .athlets-list {
+    .athlets::before {
+        background-image: url("../images/footballer_497.png");
+        background-position: -150px 90px;
+    }
+
+    .players::before {
+        background-image: url("../images/basketballer_436.png");
+        background-position-y: 60px;
+        background-position-x: right;
+    }
+
+    .list {
         margin-top: 0;
     }
 
@@ -349,15 +365,19 @@ h3 {
         padding: 3.5rem 4.5rem 5rem 30rem;
     }
 
-    .athlets-list li:nth-child(1) {
+    .players-list li {
+        padding: 3.5rem 50% 5rem 3rem;
+    }
+
+    .list li:nth-child(1) {
         background-color: #ffffff;
     }
 
-    .athlets-list li:nth-child(2) {
+    .list li:nth-child(2) {
         background-color: #f4f3f8;
     }
 
-    .athlets p {
+    .athlets p, .players p {
         line-height: 2rem;
     }
 
@@ -397,25 +417,30 @@ h3 {
 
     h2 {
         font-size: 8rem;
-        padding-left: calc(50% + 35px);
         padding-top: 9rem;
+        padding-left: 16rem;
+    }
+    .athlets h2{
+        padding-left: calc(50% + 35px);
     }
 
     .athlets::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 908px;
+        height: 920px;
         width: 100%;
         background-image: url("../images/footballer_566.png");
-        background-repeat: no-repeat;
         background-position-y: 10px;
         background-position-x: calc(50% - 290px);
-        z-index: 1;
     }
 
-    .athlets-list {
+    .players::before {
+        height: 991px;
+        width: 100%;
+        background-image: url("../images/basketballer_991.png");
+        background-position-y: 10px;
+        background-position-x: calc(50% + 350px);
+    }
+
+    .list {
         margin-top: 0;
     }
 
@@ -423,17 +448,19 @@ h3 {
         padding: 3.5rem 18rem 4rem calc(50% + 48px);
     }
 
-    .athlets p {
-        font-size: 2rem;
+    .players-list li {
+        padding: 3.5rem calc(50% + 48px) 4rem 18rem;
     }
 
-    .athlets-list h3 .number {
+    .athlets p, .players p {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+    .list h3 .number {
         font-size: 1.8rem;
         margin-right: 0.7rem;
         top: -1.2rem;
-    }
-    .athlets p {
-        line-height: 2.8rem;
     }
 
     .footer-slogan-1 {
