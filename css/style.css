@@ -229,13 +229,21 @@ h3 {
     background-color: #f5f4f9;
 }
 
-.list li:nth-child(3) {
+.athlets-list li:nth-child(3) {
     background-color: #5e42b0;
+}
+
+.players-list li:nth-child(3) {
+    background-color: #090c35;
 }
 
 .list li:nth-child(3) p {
     color: #ffffff;
 }
+.players-list li:nth-child(3) .number {
+   color: #8765dd;
+}
+
 
 .list li:nth-child(3) .number::after {
     background-color: #ffffff;
