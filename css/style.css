@@ -1,0 +1,80 @@
+/*
+ Четыре размера:
+ 1) 0-640 - 320,
+ 2) 641-960 - 768
+ 3) 961-1920 - desktop
+ 4) > 1920 - фиксация ширины 1920 и центрирование
+
+ Будем пробовать mobile first
+*/
+@font-face {
+    font-family: Open-sans;
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/OpenSans-Regular.woff");
+}
+
+@font-face {
+    font-family: Open-sans;
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/OpenSans-Bold.woff");
+}
+
+body {
+    font-family: Open-sans, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+    font-size: 2.8rem;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #0a0e34;
+    height: 570px;
+    width: 100%;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/football_767.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.header-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 132px;
+    fill: #ffffff;
+}
