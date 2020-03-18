@@ -80,11 +80,6 @@ h3 {
     padding: 30px 20px 20px 20px;
 }
 
-.footer {
-    min-height: 570px;
-    max-height: 960px;
-    height: 125vw;
-}
 
 .header::before, .footer::before {
     content: "";
@@ -162,10 +157,6 @@ h3 {
     margin-top: 0.5rem;
 }
 
-.header .app-buttons, .footer .logo {
-    position: absolute;
-    bottom: 0;
-}
 
 .athlets, .players {
     position: relative;
@@ -303,6 +294,7 @@ h3 {
 
 .footer .app-buttons {
     margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .logo-2 {
