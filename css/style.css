@@ -74,7 +74,6 @@ h3 {
 
 .header, .footer {
     background-color: #0a0e34;
-    height: 570px;
     width: 100%;
     position: relative;
     box-sizing: border-box;
@@ -123,6 +122,9 @@ h3 {
     margin-left: auto;
     margin-right: auto;
 }
+.slogan-1, .slogan-2{
+    display: block;
+}
 
 .slogan-1 {
     margin: 130px 0 0;
@@ -133,7 +135,7 @@ h3 {
     align-self: flex-end;
     letter-spacing: 1px;
     width: 73.4vw;
-    margin: 20px 0 0px;
+    margin: 20px 0 200px;
 }
 
 .app-button-line-1 {
@@ -342,8 +344,6 @@ h3 {
 /* Adapt 641px - 960px */
 @media (min-width: 641px) {
     .header {
-        max-height: 956px;
-        height: 124vw;
         width: 100%;
         padding: 40px 50px;
     }
