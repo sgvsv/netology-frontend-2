@@ -154,6 +154,7 @@ h3 {
 
 .app-button-image {
     height: 2.5rem;
+    width: 60px;
     fill: #ffffff;
     margin-top: 0.5rem;
 }
