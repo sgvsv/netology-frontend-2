@@ -117,7 +117,8 @@ h3 {
     margin-left: auto;
     margin-right: auto;
 }
-.slogan-1, .slogan-2{
+
+.slogan-1, .slogan-2 {
     display: block;
 }
 
@@ -319,6 +320,7 @@ h3 {
     text-transform: uppercase;
     font-size: 10vw;
     text-align: center;
+    font-weight: bold;
 }
 
 .footer-slogan-2 {
@@ -579,6 +581,10 @@ h3 {
         top: -1.2rem;
     }
 
+    .footer-slogan {
+        width: 670px;
+    }
+
     .footer-slogan-1 {
         font-size: 8rem;
     }
@@ -594,6 +600,7 @@ h3 {
     }
 
     .logo-2 {
+        align-self: center;
         height: 133px;
         width: 133px;
         margin-top: 10px;
