@@ -532,10 +532,10 @@ h3 {
 
     .players::after {
         height: 825px;
-        width: 50%;
+        width: 55%;
         background-image: url("../images/basketballer_991.png");
         top: -20rem;
-        left: 50%;
+        left: 45%;
         background-position: 0 0;
     }
 
