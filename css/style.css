@@ -314,11 +314,10 @@ h3 {
     margin-top: 100px;
     margin-bottom: 55px;
 
-    background-image: -ms-linear-gradient(top, #7656d6 0%, #51379b 100%);
-    background-image: -o-linear-gradient(top, #7656d6 0%, #51379b 100%);
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7ac0da), color-stop(1, #a4d4e6));
-    background-image: -webkit-linear-gradient(top, #7656d6 0%, #51379b 100%);
-    background-image: linear-gradient(top, #7656d6 0%, #51379b 100%);
+    background-image: -ms-linear-gradient(to bottom, #7656d6 0%, #51379b 100%);
+    background-image: -o-linear-gradient(to bottom, #7656d6 0%, #51379b 100%);
+    background-image: -webkit-linear-gradient(to bottom, #7656d6 0%, #51379b 100%);
+    background-image: linear-gradient(to bottom, #7656d6 0%, #51379b 100%);
     border-radius: 18%;
 }
 
