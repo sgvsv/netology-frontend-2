@@ -421,6 +421,10 @@ h3 {
         margin-top: 0;
     }
 
+    .athletes-header {
+        padding-left: 28rem;
+    }
+
     .athlets-list li {
         padding: 3.5rem 4.5rem 5rem 30rem;
     }
