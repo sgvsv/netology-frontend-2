@@ -51,8 +51,12 @@ h1 {
     width: 100%;
 }
 
-h2, h3 {
+h2 {
     color: #e7e7e7;
+}
+
+h3 {
+    color: #c1c1c1;
 }
 
 h2 {
@@ -521,15 +525,18 @@ h3 {
         height: 920px;
         width: 566px;
         background-image: url("../images/footballer_566.png");
-        background-position-y: 10px;
+        background-position: 0 0;
+        top: -15rem;
+        right: 50%;
     }
 
     .players::after {
         height: 825px;
-        width: 991px;
+        width: 50%;
         background-image: url("../images/basketballer_991.png");
-        background-position-y: 10px;
-        background-position-x: 400px;
+        top: -20rem;
+        left: 50%;
+        background-position: 0 0;
     }
 
     .list {
